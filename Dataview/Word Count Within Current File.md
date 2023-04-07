@@ -16,12 +16,13 @@ wordCount:: 2
 ## Dataview Query
 ```dataviewjs
 let array = dv.current().wordCount;
+let projectGoal = dv.current().projectGoal;
 let sum = 0;
 if (typeof array !== 'number') {
 array.map(x => sum += x);
-dv.el("p", "Total Word Count: " + sum);
+dv.el("p", `Total Word Count: ${sum} / ${projectGoal}`);
 }
 else {
-dv.el("p", "Total Word Count: " + array);
+dv.el("p",  `Total Word Count: ${array} / ${projectGoal}`);
 }
 ```
