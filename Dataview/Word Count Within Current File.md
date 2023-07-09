@@ -4,13 +4,18 @@ This dataview query allows you to track word count per session / scene within th
 
 ## Syntax For Word Count
 ```
+---
+# Frontmatter
+projectGoal: 3
+---
+
 text from session goes here
 
-wordCount:: 1
+> wordCount:: 1
 ---
 new session of writing
 
-wordCount:: 2
+> wordCount:: 2
 ```
 
 ## Dataview Query
